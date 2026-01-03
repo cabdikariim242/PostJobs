@@ -65,50 +65,49 @@ export default function suggestJobs() {
             la carte closed themed cafe kombucha tatooed waiters marron two
             ways.
           </Text>
-          <Image source={images.pizza} className="w-full h-[206px] mt-5"/>
+          <Image source={images.pizza} className="w-full h-[206px] mt-5" />
           {/* restuarant */}
-            <View className="mx-5 mt-5 ">
-          {/* header */}
-          <View className="flex flex-row justify-between items-center">
-            <View className=" ">
-              <Image source={images.restuarant} className="w-[42px] h-[42px]" />
+          <View className="mx-5 mt-5 ">
+            {/* header */}
+            <View className="flex flex-row justify-between items-center">
+              <View className=" ">
+                <Image
+                  source={images.restuarant}
+                  className="w-[42px] h-[42px]"
+                />
+              </View>
+              <View className="w-[265px] gap-2 flex">
+                <Text className="font-bold">Restaurant Manager</Text>
+                <Text>Published Jan 23</Text>
+              </View>
+              <View className=" ">
+                <Image source={images.dots} />
+              </View>
             </View>
-            <View className="w-[265px] gap-2 flex">
-              <Text className="font-bold">
-                Restaurant Manager
+            {/* TEXTS */}
+            <View className="flex mx-14 mt-5   ">
+              <View className="flex flex-row gap-1  ">
+                <Text className="font-bold text-black">Slices & Dices </Text>
+                <Text> • Austin, TX (0.9 mi from you)</Text>
+              </View>
+              {/* icons and text */}
+              <View className="flex flex-row gap-2 mt-4 w-full ">
+                <Image source={images.job} />
+                <Text className="font-bold text-black">Full time</Text>
+              </View>
+              {/* icons and text */}
+              <View className="flex flex-row gap-2 mt-4 w-full ">
+                <Image source={images.coin} />
+                <Text className="font-bold text-black">$ 35 / hr</Text>
+              </View>
+              <Text className="mt-5 text-[#181E1F] font-[400] text-[13px]">
+                Looking for an experienced Restaurant Manager
               </Text>
-              <Text>Published Jan 23</Text>
-            </View>
-            <View className=" ">
-              <Image source={images.dots} />
+              <Text className="mt-5 text-[#00A52C] font-[600] text-[13px]">
+                Learn more
+              </Text>
             </View>
           </View>
-          {/* TEXTS */}
-          <View className="flex mx-14 mt-5   ">
-            <View className="flex flex-row gap-1  ">
-              <Text className="font-bold text-black">Slices & Dices </Text>
-              <Text> • Austin, TX (0.9 mi from you)</Text>
-            </View>
-            {/* icons and text */}
-            <View className="flex flex-row gap-2 mt-4 w-full ">
-              <Image source={images.job} />
-              <Text className="font-bold text-black">
-                Full time
-              </Text>
-            </View>
-            {/* icons and text */}
-            <View className="flex flex-row gap-2 mt-4 w-full ">
-              <Image source={images.coin} />
-              <Text className="font-bold text-black">$ 35 / hr</Text>
-            </View>
-            <Text className="mt-5 text-[#181E1F] font-[400] text-[13px]">
-             Looking for an experienced Restaurant Manager
-            </Text>
-            <Text className="mt-5 text-[#00A52C] font-[600] text-[13px]">
-              Learn more
-            </Text>
-          </View>
-        </View>
         </View>
       </ScrollView>
     </SafeAreaView>
